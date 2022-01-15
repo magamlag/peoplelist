@@ -2,6 +2,7 @@
 
 /** @var \Laravel\Lumen\Routing\Router $router */
 
+use GuzzleHttp\Client;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -15,4 +16,10 @@
 
 $router->get('/', function () use ($router) {
     return $router->app->version();
+});
+
+$router->get('/people', function () use ($router) {
+    $client = new Client();
+    $request = $client->request('GET', 'https://swapi.dev/api/people/');
+    return view('peoplelist',['data'=>$request]);
 });
