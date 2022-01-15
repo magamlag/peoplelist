@@ -1,3 +1,8 @@
+# Project - People list
+This project just simply send request to external resource and recieves 
+json data. Showing them on 'people' page.
+Installed Guzzle library
+
 # Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
