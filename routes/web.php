@@ -1,5 +1,7 @@
 <?php
 
+/** @var \Laravel\Lumen\Routing\Router $router */
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -11,7 +13,6 @@
 |
 */
 
-$app->get('/', function () use ($app) {
-    return $app->welcome();
+$router->get('/', function () use ($router) {
+    return $router->app->version();
 });
-
