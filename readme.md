@@ -1,5 +1,6 @@
 # Project - People list
-This project just simply send request to external resource and recieves 
+This project build on last version of Lumen 8.1 , and 
+just simply sends request to external resource and recieves 
 json data. Showing them on 'people' page.
 Installed Guzzle library
 
